@@ -13,10 +13,10 @@ global_schema_name = None
 
 class Product(models.Model):
     codigo = models.CharField(
-        max_length=50, primary_key=True, auto_created=True, verbose_name=("Código")
+        max_length=50, verbose_name=("Código")
     )
     name_extend = models.CharField(
-        max_length=200, unique=True, verbose_name=("Nombre Producto")
+        max_length=200, verbose_name=("Nombre Producto")
     )
     images = CloudinaryField(
         "Imagen",

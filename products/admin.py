@@ -58,6 +58,7 @@ class CsvImportForm(forms.Form):
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
+        "id",
         "codigo",
         "name_extend",
         "ref",
